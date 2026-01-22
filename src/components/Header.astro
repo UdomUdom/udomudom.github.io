@@ -6,6 +6,7 @@ const pathname = Astro.url.pathname;
 const isHomePage = pathname === "/";
 const isProfilePage = pathname.startsWith("/profile");
 const isProjectPage = pathname.startsWith("/projects");
+const isBlogPage = pathname.startsWith("/blog");
 ---
 
 <header
@@ -45,6 +46,16 @@ const isProjectPage = pathname.startsWith("/projects");
                 "hover:text-headings",
                 isProjectPage && "text-headings bg-white/20 rounded-full",
               ]}>Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="/blog"
+              class:list={[
+                "font-medium transition-colors block px-5 py-2",
+                "hover:text-headings",
+                isBlogPage && "text-headings bg-white/20 rounded-full",
+              ]}>Blog</a
             >
           </li>
         </ul>
