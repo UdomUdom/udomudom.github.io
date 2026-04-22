@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, #f5eee6, #faf3e0);
+  background: linear-gradient(to bottom, #f5eee6, #cdb679e1);
   background-attachment: fixed;
   color: #433d3c;
   display: flex;

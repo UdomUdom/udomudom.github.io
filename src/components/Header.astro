@@ -14,7 +14,7 @@ const isBlogPage = pathname.startsWith("/blog");
 >
   <Container class="flex max-w-full items-center justify-center">
     <div
-      class="border-border fixed top-0 mt-5 w-max rounded-full border bg-black/5 p-1 backdrop-blur-md"
+      class="border-border fixed top-0 mt-5 w-max rounded-full bg-black/5 p-1 backdrop-blur-md"
     >
       <nav class="flex items-center">
         <ul class="flex items-center gap-1">
@@ -25,7 +25,8 @@ const isBlogPage = pathname.startsWith("/blog");
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
                 "hover:text-accent",
-                isHomePage && "text-accent rounded-full bg-black/10",
+                isHomePage &&
+                  "text-accent rounded-full bg-black/10 text-shadow-fuchsia-200 text-shadow-lg",
               ]}>Home</a
             >
           </li>
@@ -36,7 +37,8 @@ const isBlogPage = pathname.startsWith("/blog");
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
                 "hover:text-accent",
-                isProfilePage && "text-accent rounded-full bg-black/10",
+                isProfilePage &&
+                  "text-accent rounded-full bg-black/10 text-shadow-fuchsia-200 text-shadow-lg",
               ]}>Profile</a
             >
           </li>
@@ -47,7 +49,8 @@ const isBlogPage = pathname.startsWith("/blog");
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
                 "hover:text-accent",
-                isProjectPage && "text-accent rounded-full bg-black/10",
+                isProjectPage &&
+                  "text-accent rounded-full bg-black/10 text-shadow-fuchsia-200 text-shadow-lg",
               ]}>Projects</a
             >
           </li>
@@ -58,7 +61,8 @@ const isBlogPage = pathname.startsWith("/blog");
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
                 "hover:text-accent",
-                isBlogPage && "text-accent rounded-full bg-black/10",
+                isBlogPage &&
+                  "text-accent rounded-full bg-black/10 text-shadow-fuchsia-200 text-shadow-lg",
               ]}>Blog</a
             >
           </li>
