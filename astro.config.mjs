@@ -20,6 +20,9 @@ if (isBuild) {
 // https://astro.build/config
 export default defineConfig({
   output: "static",
+  image: {
+    domains: ["avatars.githubusercontent.com"],
+  },
   vite: {
     plugins: [tailwindcss()],
   },

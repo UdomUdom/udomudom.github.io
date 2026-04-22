@@ -5,7 +5,7 @@ import Divider from "./Divider.astro";
 ---
 
 <div
-  class="container mx-auto flex min-h-full w-full flex-col items-center justify-center px-4 text-center"
+  class="container mx-auto flex min-h-screen w-full flex-col items-center justify-center px-4 py-8 text-center"
 >
   <div class="text-start">
     <div
@@ -15,11 +15,12 @@ import Divider from "./Divider.astro";
         <div class="group relative">
           <Image
             src="https://avatars.githubusercontent.com/u/118774393?v=4 "
-            alt="Udomsak Sanpasert"
+            alt="Udomsak Sanprasert"
             class="h-40 w-40 rounded-lg object-cover md:h-56 md:w-56 lg:h-64 lg:w-64"
             width={248}
             height={248}
             loading="eager"
+            fetchpriority="high"
           />
         </div>
       </div>
@@ -29,19 +30,17 @@ import Divider from "./Divider.astro";
             >Udomsak S.🛸</span
           >
         </p>
-        <p
-          class="mb-4 text-2xl font-semibold text-blue-500/60 text-shadow-blue-200 sm:text-xl"
-        >
+        <p class="text-accent/80 mb-4 text-2xl font-semibold sm:text-xl">
           Software Engineer
         </p>
 
         <div
-          class="flex flex-col items-center gap-3 text-gray-400 md:items-start"
+          class="flex flex-col items-center gap-3 text-gray-600 md:items-start"
         >
           <p>📍 Thailand, Bangkok</p>
           <a
             href="mailto:udomsak.sap@gmail.com"
-            class="transition-colors duration-200 hover:text-white"
+            class="hover:text-accent transition-colors duration-200"
           >
             ✉️ udomsak.sap@gmail.com
           </a>

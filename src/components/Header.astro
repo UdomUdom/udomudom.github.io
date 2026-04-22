@@ -14,47 +14,51 @@ const isBlogPage = pathname.startsWith("/blog");
 >
   <Container class="flex max-w-full items-center justify-center">
     <div
-      class="border-border fixed top-0 mt-5 w-max rounded-full border bg-white/5 p-1 backdrop-blur-md"
+      class="border-border fixed top-0 mt-5 w-max rounded-full border bg-black/5 p-1 backdrop-blur-md"
     >
       <nav class="flex items-center">
         <ul class="flex items-center gap-1">
           <li>
             <a
               href="/"
+              data-astro-prefetch
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
-                "hover:text-headings",
-                isHomePage && "text-headings rounded-full bg-white/20",
+                "hover:text-accent",
+                isHomePage && "text-accent rounded-full bg-black/10",
               ]}>Home</a
             >
           </li>
           <li>
             <a
               href="/profile"
+              data-astro-prefetch
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
-                "hover:text-headings",
-                isProfilePage && "text-headings rounded-full bg-white/20",
+                "hover:text-accent",
+                isProfilePage && "text-accent rounded-full bg-black/10",
               ]}>Profile</a
             >
           </li>
           <li>
             <a
               href="/projects"
+              data-astro-prefetch
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
-                "hover:text-headings",
-                isProjectPage && "text-headings rounded-full bg-white/20",
+                "hover:text-accent",
+                isProjectPage && "text-accent rounded-full bg-black/10",
               ]}>Projects</a
             >
           </li>
           <li>
             <a
               href="/blog"
+              data-astro-prefetch
               class:list={[
                 "block px-5 py-2 font-medium transition-colors",
-                "hover:text-headings",
-                isBlogPage && "text-headings rounded-full bg-white/20",
+                "hover:text-accent",
+                isBlogPage && "text-accent rounded-full bg-black/10",
               ]}>Blog</a
             >
           </li>

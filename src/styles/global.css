@@ -10,14 +10,14 @@ html {
 }
 
 body {
-  background: #423b32;
-  color: #fff;
+  background: linear-gradient(to bottom, #f5eee6, #faf3e0);
+  background-attachment: fixed;
+  color: #433d3c;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -38,18 +38,14 @@ body {
   z-index: -15;
 
   background:
-    radial-gradient(
-      circle 500px at top left,
-      rgba(187, 169, 129, 0.6),
-      transparent
-    ),
-    radial-gradient(
-      circle 500px at bottom right,
-      rgba(187, 169, 129, 0.4),
-      transparent
-    );
+    radial-gradient(circle 600px at top left,
+      rgba(243, 215, 202, 0.4),
+      transparent),
+    radial-gradient(circle 600px at bottom right,
+      rgba(230, 164, 180, 0.2),
+      transparent);
 
-  filter: blur(100px);
+  filter: blur(60px);
   pointer-events: none;
 }
 
@@ -69,5 +65,8 @@ body {
   --color-midnight: #121063;
   --color-tahiti: #3ab7bf;
   --color-bermuda: #78dcca;
-  --color-uma: #c75049;
+  --color-uma: #e6a4b4;
+  --color-accent: #e6a4b4;
+  --color-secondary: #fff8e3;
+  --color-third: #f3d7ca;
 }
