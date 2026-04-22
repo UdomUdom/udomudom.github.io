@@ -5,14 +5,14 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="w-full container mx-auto flex flex-col items-center justify-center text-center px-4 py-8 min-h-screen"
+  class="container mx-auto flex min-h-screen w-full flex-col items-center justify-center px-4 py-8 text-center"
 >
-  <div class="text-start max-w-4xl w-full">
-    <div class="flex flex-col items-center justify-center float-left gap-4">
+  <div class="w-full max-w-4xl text-start">
+    <div class="float-left flex flex-col items-center justify-center gap-4">
       <Image
         src="https://avatars.githubusercontent.com/u/118774393?v=4 "
         alt="Udomsak Sanprasert"
-        class="rounded-md object-cover w-40 h-40 md:w-56 md:h-56 mr-4 md:mb-0"
+        class="mr-4 h-40 w-40 rounded-md object-cover md:mb-0 md:h-56 md:w-56"
         width={248}
         height={248}
         loading="eager"
@@ -30,11 +30,11 @@ import { Icon } from "astro-icon/components";
       </Social>
     </div>
     <div>
-      <p class="pb-2 text-3xl sm:text-4xl font-bold">
+      <p class="pb-2 text-3xl font-bold sm:text-4xl">
         Hi, I'm <span class="text-uma">Udomsak Sanprasert✨</span>
       </p>
       <div
-        class="dropping-texts text-2xl sm:text-xl font-semibold text-blue-500/60 text-shadow-blue-200"
+        class="dropping-texts text-2xl font-semibold text-blue-500/60 text-shadow-blue-200 sm:text-xl"
       >
         <div>Software Engineer</div>
         <div>Full-stack</div>
@@ -42,19 +42,18 @@ import { Icon } from "astro-icon/components";
         <div>Game developer!</div>
       </div>
     </div>
-    <p class="text-sm sm:text-base leading-relaxed">
+    <p class="text-sm leading-relaxed sm:text-base">
       I'm a passionate full-stack developer (mostly front-end) focused on
       building scalable and user-friendly web applications. Proficient in <span
-        class="font-black text-sky-400 drop-shadow-blue">React</span
+        class="drop-shadow-blue font-black text-sky-400">React</span
       >,
-      <span class="font-black text-green-500 drop-shadow-green">Node.js</span> ,
-      and
+      <span class="drop-shadow-green font-black text-green-500">Node.js</span> , and
       <span class="font-black text-gray-900 drop-shadow-black">Next.js</span>, I
       strive to write clean, maintainable code that delivers real value. Always
       seeking to learn and improve, I’m excited by modern tools like
-      <span class="font-black text-fuchsia-400 drop-shadow-magenta">Astro</span>
-      to expand my knowledge and build faster, more efficient websites. Ready to
-      contribute to impactful and innovative projects.
+      <span class="drop-shadow-magenta font-black text-fuchsia-400">Astro</span>
+      to expand my knowledge and build faster, more efficient websites. Ready to contribute
+      to impactful and innovative projects.
     </p>
   </div>
 

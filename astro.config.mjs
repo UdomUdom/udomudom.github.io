@@ -1,9 +1,9 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
-import icon from 'astro-icon';
-import mdx from '@astrojs/mdx';
+import icon from "astro-icon";
+import mdx from "@astrojs/mdx";
 const SERVER_PORT = 4321;
 // the url to access your blog during local development
 const LOCALHOST_URL = `http://localhost:${SERVER_PORT}`;
@@ -19,9 +19,9 @@ if (isBuild) {
 }
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
+  output: "static",
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
 
   server: { port: SERVER_PORT },

@@ -5,43 +5,43 @@ import Divider from "./Divider.astro";
 ---
 
 <div
-  class="w-full container mx-auto flex flex-col items-center justify-center text-center px-4 min-h-full"
+  class="container mx-auto flex min-h-full w-full flex-col items-center justify-center px-4 text-center"
 >
   <div class="text-start">
     <div
-      class="flex flex-col md:flex-row items-center justify-center mb-10 max-w-fit mx-auto gap-6"
+      class="mx-auto mb-10 flex max-w-fit flex-col items-center justify-center gap-6 md:flex-row"
     >
-      <div class="mt-6 md:mt-0 flex justify-center">
-        <div class="relative group">
+      <div class="mt-6 flex justify-center md:mt-0">
+        <div class="group relative">
           <Image
             src="https://avatars.githubusercontent.com/u/118774393?v=4 "
             alt="Udomsak Sanpasert"
-            class="rounded-lg object-cover w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64"
+            class="h-40 w-40 rounded-lg object-cover md:h-56 md:w-56 lg:h-64 lg:w-64"
             width={248}
             height={248}
             loading="eager"
           />
         </div>
       </div>
-      <div class="text-center md:text-left mt-6 md:mt-0">
-        <p class="text-4xl sm:text-5xl font-extrabold mb-3">
+      <div class="mt-6 text-center md:mt-0 md:text-left">
+        <p class="mb-3 text-4xl font-extrabold sm:text-5xl">
           <span id="hello-text">Hello</span>, I'm <span class="text-uma"
             >Udomsak S.🛸</span
           >
         </p>
         <p
-          class="text-2xl sm:text-xl mb-4 font-semibold text-blue-500/60 text-shadow-blue-200"
+          class="mb-4 text-2xl font-semibold text-blue-500/60 text-shadow-blue-200 sm:text-xl"
         >
           Software Engineer
         </p>
 
         <div
-          class="flex flex-col gap-3 items-center md:items-start text-gray-400"
+          class="flex flex-col items-center gap-3 text-gray-400 md:items-start"
         >
           <p>📍 Thailand, Bangkok</p>
           <a
             href="mailto:udomsak.sap@gmail.com"
-            class="hover:text-white transition-colors duration-200"
+            class="transition-colors duration-200 hover:text-white"
           >
             ✉️ udomsak.sap@gmail.com
           </a>
@@ -50,7 +50,7 @@ import Divider from "./Divider.astro";
     </div>
     <Divider margin="my-8" />
 
-    <div class="flex mt-2 space-x-4 justify-center items-center mx-auto">
+    <div class="mx-auto mt-2 flex items-center justify-center space-x-4">
       <SocialLink />
     </div>
   </div>

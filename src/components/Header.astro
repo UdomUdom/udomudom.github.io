@@ -10,11 +10,11 @@ const isBlogPage = pathname.startsWith("/blog");
 ---
 
 <header
-  class="flex justify-center items-center mx-auto sticky top-0 w-full xl:w-[1120px] z-10"
+  class="sticky top-0 z-10 mx-auto flex w-full items-center justify-center xl:w-[1120px]"
 >
-  <Container class="max-w-full flex justify-center items-center">
+  <Container class="flex max-w-full items-center justify-center">
     <div
-      class="w-max fixed top-0 mt-5 bg-white/5 backdrop-blur-md border border-border rounded-full p-1"
+      class="border-border fixed top-0 mt-5 w-max rounded-full border bg-white/5 p-1 backdrop-blur-md"
     >
       <nav class="flex items-center">
         <ul class="flex items-center gap-1">
@@ -22,9 +22,9 @@ const isBlogPage = pathname.startsWith("/blog");
             <a
               href="/"
               class:list={[
-                "font-medium transition-colors block px-5 py-2",
+                "block px-5 py-2 font-medium transition-colors",
                 "hover:text-headings",
-                isHomePage && "text-headings bg-white/20 rounded-full",
+                isHomePage && "text-headings rounded-full bg-white/20",
               ]}>Home</a
             >
           </li>
@@ -32,9 +32,9 @@ const isBlogPage = pathname.startsWith("/blog");
             <a
               href="/profile"
               class:list={[
-                "font-medium transition-colors block px-5 py-2",
+                "block px-5 py-2 font-medium transition-colors",
                 "hover:text-headings",
-                isProfilePage && "text-headings bg-white/20 rounded-full",
+                isProfilePage && "text-headings rounded-full bg-white/20",
               ]}>Profile</a
             >
           </li>
@@ -42,9 +42,9 @@ const isBlogPage = pathname.startsWith("/blog");
             <a
               href="/projects"
               class:list={[
-                "font-medium transition-colors block px-5 py-2",
+                "block px-5 py-2 font-medium transition-colors",
                 "hover:text-headings",
-                isProjectPage && "text-headings bg-white/20 rounded-full",
+                isProjectPage && "text-headings rounded-full bg-white/20",
               ]}>Projects</a
             >
           </li>
@@ -52,9 +52,9 @@ const isBlogPage = pathname.startsWith("/blog");
             <a
               href="/blog"
               class:list={[
-                "font-medium transition-colors block px-5 py-2",
+                "block px-5 py-2 font-medium transition-colors",
                 "hover:text-headings",
-                isBlogPage && "text-headings bg-white/20 rounded-full",
+                isBlogPage && "text-headings rounded-full bg-white/20",
               ]}>Blog</a
             >
           </li>
